@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+        fieldset{
+            background-color:lightblue;
+            padding:10px;
+            padding-top:10px;
+            padding-bottom:30px;
+            border-width:10px;
+            border-style: groove;
+        }
+        #footer{
+        position:relative
+        }
+    </style>
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+        function validateForm(){
+            var valid = true;
+            if (!document.getElementById('cat').checked&&!document.getElementById('dog').checked){valid = false;}
+            if (!document.getElementById('male').checked&&!document.getElementById('female').checked&&!document.getElementById('none').checked){valid = false;}
+            if (!document.getElementById('frcat').checked&&!document.getElementById('frdog').checked&&!document.getElementById('frkids').checked){valid = false;}
+            if(document.getElementById('breed').value==""){valid=false;}
+            if (!valid)alert("empty field(s)");
+            return valid;
+
+        }
+    </script>
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Find A Dog/Cat</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <form>
+                    <fieldset>
+                        <p>Please fill out the following form so that we can find the best pet for you and your family!</p>
+                        <br><label>Cat or Dog: </label>
+                        <label><input type="radio" name="pet[]" value="cat" id="cat">Cat</label>
+                        <label><input type="radio" name="pet[]" value="dog" id="dog">Dog</label><br><br>
+                        <label>Cat or Dog breed (Enter "none" if you don't have a preference):</label>
+                        <input type="text" value="" name="breed" id="breed"><br><br>
+                        <label>Preferred Gender: </label>
+                        <label><input type="radio" name="gender[]" value="female" id="female">Female</label>
+                        <label><input type="radio" name="gender[]" value="male" id="male">Male</label>
+                        <label><input type="radio" name="gender[]" value="none" id="none">No Preference</label><br><br>
+                        <label>Preferred age of animal</label><br><select name="age">
+                            <option>Kitten/Puppy</option>
+                            <option>Teenage dog or cat</option>
+                            <option>Adult dog or cat</option>
+                            </select><br><br>
+                        <label>Other family members they will be around</label><br>
+                        <label><input type="checkbox" name="family[]" value="dog" id="frdog">Dog(s)</label>
+                        <label><input type="checkbox" name="family[]" value="cat" id="frcat">Cat(s)</label>
+                        <label><input type="checkbox" name="family[]" value="kids" id="frkids">Small child(ren)</label><br>
+                        </fieldset><br>
+                        <input type = "reset" value = "Reset Form" >
+                        <input type = "submit" value = "Submit Form" onclick="validateForm()">
+                </form>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #infobox{
+            background:lightblue;
+            border-color:rgba(5, 5, 209, 0.937);
+            color:rgb(74, 74, 255);
+        }
+        #questionsbox{
+            background:pink;
+            border-color:rgb(195, 5, 5);
+            color:rgb(255, 57, 57);
+        }
+        body{
+            background:lightyellow;
+        }
+        #info{
+            color:rgba(5, 5, 209, 0.937);
+        }
+        #questions{
+            color:rgb(195, 5, 5);
+        }
+        label{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <h4>Music Lover's Survey<a href="https://stock.adobe.com/search?k=clipart+music&asset_id=368982957"><img src="https://as2.ftcdn.net/v2/jpg/03/68/98/29/1000_F_368982957_jgYkATE4h5AyQGLlcE4iRMKv603XfhxF.jpg" alt="Clip art image of music" width="100" height="50"></a></h4>
+    <form>
+        
+        <fieldset id="infobox">
+            <legend id="info">Music lover's Personal information</legend>
+            <label>First name</label>
+            <input type="text"><br><br>
+            <label>Family name</label>
+            <input type="text"><br><br>
+            <label>Gender: </label>
+            <label><input type="radio" name="gender[]" value="female">Female</label>
+            <label><input type="radio" name="gender[]" value="male">Male</label><br><br>
+            What age category are you from?<select name="age">
+            <option>&lt;18</option>
+            <option>18-70</option>
+            <option>70+</option>
+            </select><br><br>
+            <label>Email</label>
+            <input type="text">
+        </fieldset>
+        <br>
+        <fieldset id="questionsbox">
+            <legend id="questions">Survey Questions</legend>
+            Which type of music do you listen to? (Pick as many as apply)<br>
+            <label><input type="checkbox" name="music[]" value="Blues">Blues</label>
+            <label><input type="checkbox" name="music[]" value="Classical">CLassical</label>
+            <label><input type="checkbox" name="music[]" value="Electronic">Electronic Music</label><br>
+            <label><input type="checkbox" name="music[]" value="Hip_hop/rap">Hip hop/rap</label>
+            <label><input type="checkbox" name="music[]" value="Pop">Pop (Popular music)</label>
+            <label><input type="checkbox" name="music[]" value="Reggae">Reggae</label><br>
+            <label><input type="checkbox" name="music[]" value="Other">Other</label><br><br>
+            <label>List your 3 favourite artists/bands</label><br>
+                <label><input type="text" name="artist/band"></label><label><input type="text" name="artist/band"></label><label><input type="text" name="artist/band"></label><br><br>
+                <label>If you were to win tickets which show would you like 2 tickets to?</label><br>
+                <label><input type="radio" name="ticket[]" value="Floyd">BRIT FLOYD (March 25, 2016)</label>
+                <label><input type="radio" name="ticket[]" value="Iron">IRON MAIDEN (APRIL 1, 2016)</label>
+                <label><input type="radio" name="ticket[]" value="Jackson">JANET JACKSON (June 17, 2016)</label>
+                <label><input type="radio" name="ticket[]" value="Adele">ADELE (September 30, 2016)</label>
+        </fieldset><br>
+        Thank you for taking the time to fill out our survey!<br><br>
+        <input type = "reset" value = "Reset Form">
+        <input type = "submit" value = "Submit Form">
+        
+    </form>
+</body>
+</html>

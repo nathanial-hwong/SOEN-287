@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--image sources
+    https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/
+    https://www.purina.ca/cats/cat-breeds
+    -->
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+        #footer{
+        position:relative
+        }
+        #time{
+            color:black
+        }
+        #content table tr td{
+            width:25%;
+        }
+        #content table tr td img{
+            width:85%;
+            height:85%;
+        }
+        #content table tr td p{
+            text-align:justify;
+            vertical-align:top;
+            font-family:cursive;
+        }
+   </style>
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+    </script>
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Browse available pets</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://www.purina.ca/sites/default/files/styles/kraken_generic_max_width_240/public/Bengal_body_6.jpg?itok=CCsPv3fL" alt="image of pet">
+                            <br><input type="button" value="Interested" name="interested">
+                        </td>
+                        <td>     
+                            <p>Bengal cat<br>Age: Adult<br>Gender: Male<br><hr><br>Gets along with:<br>&#10004 Cats<br>&#10004 Children<br><hr><br> Previous owner's name:<br>Liam Miller<br>Previous owner's email:<br>sample1@email.com</p>
+                        </td>
+                        <td>    
+                            <p>Maltipoo dog<br>Age: Puppy<br>Gender: Female<br><hr><br>Gets along with: <br>&#10004 Dogs<br>&#10004 Cats<br>&#10004 Children<br><hr><br> Previous owner's name:<br>Fiona Smith<br>Previous owner's email:<br>sample2@email.com</p>
+                        </td>
+                        <td>
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*" alt="image of pet">
+                            <br><input type="button" value="Interested" name="interested">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://www.purina.ca/sites/default/files/styles/kraken_generic_max_width_240/public/Birman_body_6.jpg?itok=9zO-CYd7" alt="image of pet">
+                            <br><input type="button" value="Interested" name="interested">
+                        </td>
+                        <td>     
+                            <p>Birman cat<br>Age: Teenage<br>Gender: Female<br><hr><br>Gets along with: <br>&#10004 Dogs<br>&#10004 Children<br><hr><br> Previous owner's name:<br>Ivor Watson<br>Previous owner's email:<br>sample3@email.com</p>
+                        </td>
+                        <td>     
+                            <p>Chow-chow dog<br>Age: Teenage<br>Gender: Male<br><hr><br>Gets along with: <br>&#10004 Dogs<br>&#10004 Cats<br><hr><br> Previous owner's name:<br>Gary Monroe<br>Previous owner's email:<br>sample4@email.com</p>
+                        </td>
+                        <td>
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/chow-chow-portrait-royalty-free-image-1652926953.jpg?crop=0.44455xw:1xh;center,top&resize=980:*" alt="image of pet">
+                            <br><input type="button" value="Interested" name="interested">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

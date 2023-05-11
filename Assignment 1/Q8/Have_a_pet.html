@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+        fieldset{
+            background-color:lightblue;
+            padding:10px;
+            padding-top:10px;
+            padding-bottom:30px;
+            border-width:10px;
+            border-style: groove;
+        }
+        #comments{
+            height:40px;
+            width:70%;
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Have A Pet To Give Away?</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <form>
+                    <fieldset>
+                        <p>Please fill out the following form so that we can find the best new home for your friend!</p>
+                        <br><label>Cat or Dog: </label>
+                        <label><input type="radio" name="pet[]" value="cat">Cat</label>
+                        <label><input type="radio" name="pet[]" value="dog">Dog</label><br><br>
+                        <label>Breed of Cat or Dog</label><br>
+                        <input type="text"><br><br>
+                        <label>Age of pet: </label><br><select name="age">
+                            <option>Kitten/Puppy</option>
+                            <option>Teenage dog or cat</option>
+                            <option>Adult dog or cat</option></select><br><br>
+                        <label>Animal gender: </label>
+                        <label><input type="radio" name="gender[]" value="female">Female</label>
+                        <label><input type="radio" name="gender[]" value="male">Male</label>
+                        <label><input type="radio" name="gender[]" value="none">No Preference</label><br><br>
+                        <label><input type="checkbox" name="other[]" value="dog">Gets along with other dogs</label><br>
+                        <label><input type="checkbox" name="other[]" value="cat">Gets along with other cats</label><br>
+                        <label><input type="checkbox" name="other[]" value="kids">Suitable for a family with small children</label><br><br>
+                        <label>Any comments concerning your pet?</label><br>
+                        <input type="text" id="comments"><br><br>
+                        <label>Current Owner's Family and Given Name</label><br>
+                        <input type="text"><br><br>
+                        <label>Current Owner's email</label><br>
+                        <input type="text"><br><br>
+                        </fieldset><br>
+                        <input type = "reset" value = "Reset Form" >
+                        <input type = "submit" value = "Submit Form" ><br><br>
+                </form>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

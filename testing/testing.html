@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>testing</title>
+    <link rel="stylesheet" href="link_color.css">
+
 </head>
-<body onload="warn()">
-    <p>text</p>
-    <script>document.write(",1".match(/\d*/));</script>
+<body>
+    <p id="p"></p>
+<script type="text/javascript">
+    document.getElementById('p').innerHTML = "asdasd";
+    var a = 0;
+    var e = document.getElementById('p');
+    function display(){
+        a += 1;
+        e.innerHTML = a;
+    }
+
+</script>
     
 </body>
 </html>

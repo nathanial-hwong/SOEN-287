@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+    #footer{
+        position:relative
+    }
+    </style>
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+    </script>
+   
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Dog Care</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <p>This page gives general information about the caring of a pet dog. Please refer to the official ASPCA page for additional information concerning the caretaking of a pet dog from which we have based our information. <br><br>You can access this page by clicking on the ASPCA logo below</p>
+                <a href="https://www.aspca.org/pet-care/dog-care/general-dog-care"><img id="aspca" src="https://1000logos.net/wp-content/uploads/2020/09/ASPCA-logo.png" alt="ASPCA logo"></a>
+                <h4>Feeding</h4>
+                <ul>
+                    <li>Puppies eight to 12 weeks old need four meals a day.</li>
+                    <li>Feed puppies three to six months old three meals a day.</li>
+                    <li>Feed puppies six months to one year two meals a day.</li>
+                    <li>When your dog reaches his first birthday, one meal a day is usually enough.</li>
+                    <li>For some dogs, including larger canines or those prone to bloat, it's better to feed two smaller meals.</li>
+                </ul>
+                <h4>Exercise</h4>
+                <p>Dogs need exercise to burn calories, stimulate their minds, and stay healthy. Individual exercise needs vary based on breed or breed mix, sex, age and level of health. Exercise also tends to help dogs avoid boredom, which can lead to destructive behaviors. Supervised fun and games will satisfy many of your pet's instinctual urges to dig, herd, chew, retrieve and chase.</p>
+                <h4>Grooming</h4>
+                <p>Help keep your dog clean and reduce shedding with frequent brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year. Before bathing, comb or cut out all mats from the coat. Carefully rinse all soap out of the coat, or the dirt will stick to soap residue.</p>
+                <h4>Dog Supply Checklist</h4>
+                <ul>
+                    <li>Premium-quality dog food and treats</li>
+                    <li>Food dish</li>
+                    <li>Water bowl</li>
+                    <li>Toys, toys and more toys, including safe chew toys</li>
+                    <li>Brush & comb for grooming, including flea comb</li>
+                    <li>Collar with license and ID tag</li>
+                    <li>Leash</li>
+                    <li>Carrier (for smaller dogs)</li>
+                    <li>Training crate</li>
+                    <li>Dog bed or box with warm blanket or towel</li>
+                    <li>Dog toothbrush</li>
+                </ul>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

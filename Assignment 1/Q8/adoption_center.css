@@ -1,0 +1,74 @@
+h3{
+    font-size:200%;
+    font-family:cursive;
+}
+p{
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif
+}
+table{
+    width:100%;
+}
+#logo{
+    width:30%;
+    height:15%;
+}
+
+#aspca{
+    width:20%;
+    height:10%;
+}
+body{
+    background-color: rgb(228, 228, 228);
+}
+a:link{
+    color:white;
+}
+a:visited{
+    color:white;
+}
+#sidebar{
+    position:absolute;
+    right:0%;
+    width:25%;
+}
+#sidebar ul{
+    list-style-type: none;
+    list-style-position:right;
+    padding-left:0px;
+    
+}
+#sidebar li{
+    border-style: solid;
+    border-color:grey;
+    border-width:1px;
+    padding:5px;
+    padding-left:15px;
+    background-color:rgb(167, 167, 167);
+}
+#sidebar li:hover{
+    background-color:rgb(91, 91, 91);
+    color:white;
+}
+#sidebar #Home{
+    Background-color:rgb(255, 153, 0);
+    color:white;
+}
+#content{
+    position: relative;
+    height:100%;
+    width:70%;
+}
+#header{
+    background-color:rgb(255, 153, 0);
+    width:100%;
+    padding:10px;
+}
+#footer{
+    background-color:rgb(255, 153, 0);
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    padding:10px;
+}
+

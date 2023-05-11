@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+    </script>    
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>New Best Friends</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <p>Welcome to Nathanial's Adoption Center! Our website is designed to help you find a perfect new best friend as well as help you keep them happy and healthy!</p>
+                <p>We also offer a service to take in one of your pets to find them a new happy home.</p>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+    
+</body>
+</html>

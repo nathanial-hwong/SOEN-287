@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+
+    </style>
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+    </script>
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Contact Us</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <p>Website builder: <br>Nathanial Hwong</p>
+                <p>Student id: 40243583<br>
+                Email : nathanial.hwong8@gmail.com</p>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

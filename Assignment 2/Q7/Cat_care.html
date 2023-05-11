@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+        #footer{
+        position:relative
+        }
+    </style>
+</head>
+<body onload="displayTime()"> 
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+    </script>
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Cat Care</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <p>This page gives general information about the caring of a pet cat. Please refer to the official ASPCA page for additional information concerning the caretaking of a pet cat from which we have based our information. <br><br>You can access this page by clicking on the ASPCA logo below</p>
+                <a href="https://www.aspca.org/pet-care/cat-care/general-cat-care"><img id="aspca" src="https://1000logos.net/wp-content/uploads/2020/09/ASPCA-logo.png" alt="ASPCA logo"></a>
+                <h4>Feeding</h4>
+                <ul>
+                    <li>Cats require taurine, an essential amino acid, for heart and eye health. The food you choose should be balanced for the life stage of your cat or kitten. Properly balanced foods will contain taurine.</li>
+                    <li>You will need to provide fresh, clean water at all times, and wash and refill your cat’s water bowls daily.</li>
+                    <li>Treats should be no more than 5-10% of the diet.</li>    
+                    <li>Many people feed baby food to a cat or kitten who is refusing food or not feeling well  Please read labels carefully: If the baby food contains onion or garlic powder, your pet could be poisoned.</li>
+                    <li>Take your pet to your veterinarian if signs of anorexia, diarrhea, vomiting or lethargy continue for more than two days.</li>
+                </ul>
+                <h4>Grooming</h4>
+                <p>Most cats stay relatively clean and rarely need a bath, but you should brush or comb your cat regularly. Frequent brushing helps keep your cat's coat clean, reduces the amount of shedding and cuts down on the incidence of hairballs.</p>
+                <h4>Scratching</h4>
+                <p>Cats need to scratch! When a cat scratches, the old outer nail sheath is pulled off and the sharp, smooth claws underneath are exposed. Cutting your cat’s nails every two to three weeks will keep them relatively blunt and less likely to harm the arms of both humans and furniture. Provide your cat with a sturdy scratching post, at least three feet high. The post should also be stable enough that it won't wobble during use, and should be covered with rough material such as sisal, burlap or tree bark. Many cats also like scratching pads.</p>
+                <h4>Cat Supply Checklist</h4>
+                <ul>
+                    <li>Premium-brand cat food</li>
+                    <li>Food dish</li>
+                    <li>Water bowl</li>
+                    <li>Interactive toys</li>
+                    <li>Brush</li>
+                    <li>Comb</li>
+                    <li>Safety cat collar with ID tag</li>
+                    <li>Scratching post or scratching pad</li>
+                    <li>Litter box and litter</li>
+                    <li>Cat carrier</li>
+                    <li>Cat bed or box with warm blanket or towel</li>
+                </ul>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>

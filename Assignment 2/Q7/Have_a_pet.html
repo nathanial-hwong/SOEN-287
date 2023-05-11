@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Best Friends</title>
+    <link rel="stylesheet" href="adoption_center.css">
+    <style>
+        fieldset{
+            background-color:lightblue;
+            padding:10px;
+            padding-top:10px;
+            padding-bottom:30px;
+            border-width:10px;
+            border-style: groove;
+        }
+        #comments{
+            height:40px;
+            width:70%;
+        }
+        #footer{
+        position:relative
+        }
+    </style>
+</head>
+<body onload="displayTime()">
+    <script>
+        function displayTime(){
+            var a = new Date();
+            var time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time;
+            setInterval(displayTime, 1000);
+           
+        }
+        function validateForm(){
+            var valid = true;
+            if (!document.getElementById('cat').checked&&!document.getElementById('dog').checked){valid = false;}
+            if (!document.getElementById('male').checked&&!document.getElementById('female').checked){valid = false;}
+            if (!document.getElementById('frcat').checked&&!document.getElementById('frdog').checked&&!document.getElementById('frkids').checked){valid = false;}
+            if(document.getElementById('breed').value==""){valid=false;}
+            if(document.getElementById('fname').value==""){valid=false;}
+            if((document.getElementById('email').value).match(/\w*\@\w*\.\w/)==null){valid=false;}
+            if (!valid)alert("empty/invalid field(s)");
+            return valid;
+
+        }
+    </script>
+    
+    
+    <table>
+        <tr id="header">
+            <td>
+                <h3>Have A Pet To Give Away?</h3>
+            </td>
+            <td>
+                <a href="Home.html"><img id="logo" src="NBF_logo.png" alt="NBF logo"></a>
+                <p id="time"></p>
+            </td>
+        </tr>
+        <tr>
+            <td id="content">
+                <form>
+                    <fieldset>
+                        <p>Please fill out the following form so that we can find the best new home for your friend!</p>
+                        <br><label>Cat or Dog: </label>
+                        <label><input type="radio" name="pet[]" value="cat" id="cat">Cat</label>
+                        <label><input type="radio" name="pet[]" value="dog" id="dog">Dog</label><br><br>
+                        <label>Breed of Cat or Dog</label><br>
+                        <input type="text" id="breed"><br><br>
+                        <label>Age of pet: </label><br><select name="age">
+                            <option>Kitten/Puppy</option>
+                            <option>Teenage dog or cat</option>
+                            <option>Adult dog or cat</option></select><br><br>
+                        <label>Animal gender: </label>
+                        <label><input type="radio" name="gender[]" value="female" id="female">Female</label>
+                        <label><input type="radio" name="gender[]" value="male" id="male">Male</label><br><br>
+                        <label><input type="checkbox" name="other[]" value="dog" id="frdog">Gets along with other dogs</label><br>
+                        <label><input type="checkbox" name="other[]" value="cat" id="frcat">Gets along with other cats</label><br>
+                        <label><input type="checkbox" name="other[]" value="kids" id="frkids">Suitable for a family with small children</label><br><br>
+                        <label>Any comments concerning your pet?</label><br>
+                        <input type="text" id="comments"><br><br>
+                        <label>Current Owner's Family and Given Name</label><br>
+                        <input type="text" name="full_name" id="fname"><br><br>
+                        <label>Current Owner's email</label><br>
+                        <input type="text" name="email" id="email"><br><br>
+                        </fieldset><br>
+                        <input type = "reset" value = "Reset Form" >
+                        <input type = "submit" value = "Submit Form" onclick="validateForm()"><br><br>
+                </form>
+            </td>
+            <td  id="sidebar">
+                <ul>
+                    <li id="Home"><a href="Home.html">Home Page</a></li>
+                    <li><a href="Browse_available_pets.html">Browse Available Pets</a></li>
+                    <li><a href="Find_a_dog_cat.html">Find a dog/cat</a></li>
+                    <li><a href="Dog_care.html">Dog care</a></li>
+                    <li><a href="Cat_care.html">Cat care</a></li>
+                    <li><a href="Have_a_pet.html">Have a pet to give away</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <a href="PrivacyDisclaimer.html">
+        <div id="footer">
+            <p>Privacy/Disclaimer Statement</p> 
+        </div>
+    </a>
+</body>
+</html>
